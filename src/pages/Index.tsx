@@ -7,9 +7,11 @@ import { Eye, EyeOff, Mail, Lock } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 import BrandLogo from "@/components/BrandLogo";
 import loginIllustration from "@/assets/login-illustration.png";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     document.title = "Login Super Admin • Titipsini.Com";
@@ -28,6 +30,7 @@ const Index = () => {
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({ title: "Masuk", description: "Demo UI: autentikasi belum dihubungkan." });
+    navigate("/dashboard");
   };
 
   return (
