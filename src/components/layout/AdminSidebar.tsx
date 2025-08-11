@@ -27,7 +27,7 @@ const AdminSidebar = () => {
               `flex items-center gap-3 rounded-md px-3 py-2 transition ${
                 isActive
                   ? "bg-primary-foreground/10 text-primary-foreground"
-                  : "hover:bg-primary-foreground/10/50"
+                  : "hover:bg-primary-foreground/10"
               }`
             }
           >
